@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Dashboard - JaipurStays</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container navbar">
+
+    <a href="index.html" class="logo">
+      <span class="logo-icon">J</span>
+      <span>Jaipur<span class="logo-highlight">Stays</span></span>
+    </a>
+
+    <div class="owner-area">
+      <div class="owner-avatar" id="ownerAvatar">OW</div>
+
+      <div class="owner-info">
+        <strong id="ownerName">PG Owner</strong>
+        <span>Property Owner</span>
+      </div>
+
+      <button class="logout-btn" id="logoutBtn">
+        Logout
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main class="dashboard">
+
+  <div class="container">
+
+    <div class="welcome">
+
+      <div>
+        <span class="eyebrow">OWNER DASHBOARD</span>
+        <h1>Welcome, <span id="welcomeName">Owner</span></h1>
+        <p>Manage your PG listing and track your property.</p>
+      </div>
+
+      <a href="list.html" class="add-btn">
+        + Add New PG
+      </a>
+
+    </div>
+
+    <div class="stats">
+
+      <div class="stat-card">
+        <div class="stat-icon orange">🏠</div>
+        <div>
+          <span>Total Listings</span>
+          <strong id="totalListings">0</strong>
+          <small>Your properties</small>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon blue">👁</div>
+        <div>
+          <span>Views</span>
+          <strong>0</strong>
+          <small>This month</small>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon green">📞</div>
+        <div>
+          <span>Inquiries</span>
+          <strong>0</strong>
+          <small>This month</small>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon purple">⭐</div>
+        <div>
+          <span>Status</span>
+          <strong id="listingStatus">Inactive</strong>
+          <small>Listing status</small>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="dashboard-grid">
+
+      <section class="listing-section">
+
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">YOUR PROPERTY</span>
+            <h2>PG Listing</h2>
+          </div>
+        </div>
+
+        <div id="listingContainer">
+
+          <div class="empty-listing" id="emptyListing">
+
+            <div class="empty-icon">
+              🏠
+            </div>
+
+            <h3>No PG listed yet</h3>
+
+            <p>
+              Add your PG details to start receiving inquiries from students.
+            </p>
+
+            <a href="list.html" class="primary-btn">
+              List Your PG
+            </a>
+
+          </div>
+
+          <div id="pgListing" style="display:none;">
+
+            <div class="pg-card">
+
+              <div class="pg-card-top">
+
+                <div class="pg-image">
+                  🏠
+                </div>
+
+                <div class="pg-info">
+
+                  <span class="pg-status" id="pgStatus">
+                    Active
+                  </span>
+
+                  <h3 id="pgName">
+                    PG Name
+                  </h3>
+
+                  <p id="pgLocation">
+                    📍 Jaipur
+                  </p>
+
+                  <p id="pgType">
+                    PG
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="pg-details">
+
+                <div>
+                  <span>Monthly Rent</span>
+                  <strong id="pgRent">₹0</strong>
+                </div>
+
+                <div>
+                  <span>Available Beds</span>
+                  <strong id="pgBeds">0</strong>
+                </div>
+
+                <div>
+                  <span>For</span>
+                  <strong id="pgGender">-</strong>
+                </div>
+
+              </div>
+
+              <div class="pg-amenities" id="pgAmenities"></div>
+
+              <div class="listing-actions">
+
+                <a href="list.html?edit=true" class="edit-btn">
+                  Edit Listing
+                </a>
+
+                <button class="delete-btn" id="deleteBtn">
+                  Delete Listing
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <div class="side-section">
+
+        <div class="subscription-card">
+
+          <div class="card-top">
+
+            <div>
+              <span class="eyebrow">CURRENT PLAN</span>
+              <h3>Basic Plan</h3>
+            </div>
+
+            <span class="active-badge">
+              ACTIVE
+            </span>
+
+          </div>
+
+          <div class="subscription-price">
+            <strong>₹0</strong>
+            <span>/ month</span>
+          </div>
+
+          <div class="subscription-line">
+            <span>Listing limit</span>
+            <strong>1 PG</strong>
+          </div>
+
+          <button class="manage-btn">
+            Manage Plan
+          </button>
+
+        </div>
+
+        <div class="help-card">
+
+          <div class="help-icon">
+            💬
+          </div>
+
+          <h3>Need Help?</h3>
+
+          <p>
+            Have questions about your listing or plan?
+          </p>
+
+          <a href="#">
+            Contact Support →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <section class="getting-started">
+
+      <div class="section-header">
+
+        <div>
+          <span class="eyebrow">GETTING STARTED</span>
+          <h2>Complete your listing</h2>
+        </div>
+
+        <span class="progress" id="progressText">
+          0 of 3 completed
+        </span>
+
+      </div>
+
+      <div class="setup-grid">
+
+        <div class="setup-card">
+
+          <div class="setup-number">
+            01
+          </div>
+
+          <div>
+            <h3>Property Details</h3>
+            <p>
+              Add your PG name, location, rent and available beds.
+            </p>
+
+            <a href="list.html?edit=true">
+              Edit Details →
+            </a>
+          </div>
+
+        </div>
+
+        <div class="setup-card">
+
+          <div class="setup-number">
+            02
+          </div>
+
+          <div>
+            <h3>Add Photos</h3>
+            <p>
+              Add attractive photos so students can view your property.
+            </p>
+
+            <a href="list.html?edit=true">
+              Add Photos →
+            </a>
+          </div>
+
+        </div>
+
+        <div class="setup-card">
+
+          <div class="setup-number">
+            03
+          </div>
+
+          <div>
+            <h3>Choose a Plan</h3>
+            <p>
+              Select a plan to publish your PG listing.
+            </p>
+
+            <a href="pricing.html">
+              View Plans →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+
+  <div class="container footer-inner">
+
+    <div>
+      <a href="index.html" class="logo footer-logo">
+        <span class="logo-icon">J</span>
+        <span>Jaipur<span class="logo-highlight">Stays</span></span>
+      </a>
+    </div>
+
+    <p>
+      © 2026 JaipurStays. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+<script>
+
+const savedPG = localStorage.getItem("jaipurStaysPG");
+
+const emptyListing = document.getElementById("emptyListing");
+const pgListing = document.getElementById("pgListing");
+
+const totalListings = document.getElementById("totalListings");
+const listingStatus = document.getElementById("listingStatus");
+
+const ownerName = document.getElementById("ownerName");
+const welcomeName = document.getElementById("welcomeName");
+const ownerAvatar = document.getElementById("ownerAvatar");
+
+const pgName = document.getElementById("pgName");
+const pgLocation = document.getElementById("pgLocation");
+const pgType = document.getElementById("pgType");
+const pgRent = document.getElementById("pgRent");
+const pgBeds = document.getElementById("pgBeds");
+const pgGender = document.getElementById("pgGender");
+const pgAmenities = document.getElementById("pgAmenities");
+
+const progressText = document.getElementById("progressText");
+
+if (savedPG) {
+
+  const pgData = JSON.parse(savedPG);
+
+  emptyListing.style.display = "none";
+  pgListing.style.display = "block";
+
+  totalListings.textContent = "1";
+  listingStatus.textContent = "Active";
+
+  ownerName.textContent = pgData.ownerName || "PG Owner";
+  welcomeName.textContent = pgData.ownerName || "Owner";
+
+  if (pgData.ownerName) {
+    ownerAvatar.textContent = pgData.ownerName
+      .split(" ")
+      .map(name => name.charAt(0))
+      .join("")
+      .substring(0, 2)
+      .toUpperCase();
+  }
+
+  pgName.textContent = pgData.pgName || "PG Name";
+  pgLocation.textContent = "📍 " + (pgData.area || "Jaipur");
+
+  pgType.textContent =
+    (pgData.propertyType || "PG") +
+    " • " +
+    (pgData.gender || "Both");
+
+  pgRent.textContent = "₹" + (pgData.rent || "0");
+  pgBeds.textContent = pgData.beds || "0";
+  pgGender.textContent = pgData.gender || "-";
+
+  pgAmenities.innerHTML = "";
+
+  if (pgData.amenities && pgData.amenities.length > 0) {
+
+    pgData.amenities.forEach(function(amenity) {
+
+      const span = document.createElement("span");
+
+      span.textContent = amenity;
+
+      pgAmenities.appendChild(span);
+
+    });
+
+  }
+
+  let completed = 1;
+
+  if (pgData.description) {
+    completed++;
+  }
+
+  if (pgData.amenities && pgData.amenities.length > 0) {
+    completed++;
+  }
+
+  progressText.textContent =
+    completed + " of 3 completed";
+
+} else {
+
+  totalListings.textContent = "0";
+  listingStatus.textContent = "Inactive";
+
+  progressText.textContent =
+    "0 of 3 completed";
+
+}
+
+document.getElementById("deleteBtn").addEventListener("click", function() {
+
+  const confirmed = confirm(
+    "Are you sure you want to delete your PG listing?"
+  );
+
+  if (!confirmed) {
+    return;
+  }
+
+  localStorage.removeItem("jaipurStaysPG");
+
+  window.location.reload();
+
+});
+
+document.getElementById("logoutBtn").addEventListener("click", function() {
+
+  window.location.href = "index.html";
+
+});
+
+</script>
+
+
+
+</body>
+</html>

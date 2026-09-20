@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Your PG - JaipurStays</title>
+  <link rel="stylesheet" href="list.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container navbar">
+
+    <a href="index.html" class="logo">
+      <span class="logo-icon">J</span>
+      <span>Jaipur<span class="logo-highlight">Stays</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Find PG</a>
+      <a href="index.html#locations">Locations</a>
+      <a href="index.html#how-it-works">How It Works</a>
+    </nav>
+
+    <div class="nav-actions">
+      <span class="already-owner">Already listed?</span>
+      <a href="#" class="login-btn">Owner Login</a>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-content">
+
+    <div class="hero-text">
+      <span class="eyebrow">FOR PG OWNERS</span>
+
+      <h1>
+        Get your PG in front of
+        <span>more students.</span>
+      </h1>
+
+      <p>
+        List your PG on JaipurStays and connect with students
+        searching for a comfortable and affordable place to stay in Jaipur.
+      </p>
+
+      <div class="benefits">
+        <div class="benefit">
+          <span>✓</span>
+          <div>
+            <strong>Reach more students</strong>
+            <p>Show your property to students actively looking for PGs.</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>✓</span>
+          <div>
+            <strong>Get genuine inquiries</strong>
+            <p>Receive direct calls and inquiries from interested students.</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>✓</span>
+          <div>
+            <strong>Manage your listing</strong>
+            <p>Keep rent, availability, photos and amenities updated.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div>
+          <strong>100+</strong>
+          <span>PG Listings</span>
+        </div>
+
+        <div>
+          <strong>500+</strong>
+          <span>Students</span>
+        </div>
+
+        <div>
+          <strong>Jaipur</strong>
+          <span>Focused Marketplace</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-wrapper">
+
+      <div class="form-header">
+        <span class="form-step">STEP 1 OF 2</span>
+        <h2>Tell us about your PG</h2>
+        <p>Fill in your basic property details to get started.</p>
+      </div>
+
+      <form class="listing-form">
+
+        <div class="form-group">
+          <label>PG Name</label>
+          <input type="text" placeholder="Enter your PG name" required>
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label>Owner Name</label>
+            <input type="text" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="10-digit number" required>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label>Property Type</label>
+            <select required>
+              <option value="">Select type</option>
+              <option>PG</option>
+              <option>Hostel</option>
+              <option>Co-Living</option>
+              <option>Student Accommodation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>For</label>
+            <select required>
+              <option value="">Select</option>
+              <option>Boys</option>
+              <option>Girls</option>
+              <option>Both</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label>Area in Jaipur</label>
+          <select required>
+            <option value="">Select your area</option>
+            <option>Malviya Nagar</option>
+            <option>Mansarovar</option>
+            <option>Jagatpura</option>
+            <option>Vaishali Nagar</option>
+            <option>Raja Park</option>
+            <option>Pratap Nagar</option>
+            <option>Gopalpura</option>
+            <option>Vidhyadhar Nagar</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label>Monthly Rent</label>
+            <input type="number" placeholder="₹ Monthly rent" required>
+          </div>
+
+          <div class="form-group">
+            <label>Security Deposit</label>
+            <input type="number" placeholder="₹ Deposit">
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label>Available Beds</label>
+          <input type="number" placeholder="Number of available beds" required>
+        </div>
+
+        <div class="form-group">
+          <label>WhatsApp Number</label>
+          <input type="tel" placeholder="WhatsApp number">
+        </div>
+
+        <div class="form-group">
+          <label>Short Description</label>
+          <textarea rows="4" placeholder="Tell students about your PG, nearby colleges, facilities, rules, etc."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Amenities</label>
+
+          <div class="amenities-grid">
+            <label class="amenity">
+              <input type="checkbox">
+              <span>Wi-Fi</span>
+            </label>
+
+            <label class="amenity">
+              <input type="checkbox">
+              <span>Food</span>
+            </label>
+
+            <label class="amenity">
+              <input type="checkbox">
+              <span>AC</span>
+            </label>
+
+            <label class="amenity">
+              <input type="checkbox">
+              <span>Parking</span>
+            </label>
+
+            <label class="amenity">
+              <input type="checkbox">
+              <span>Laundry</span>
+            </label>
+
+            <label class="amenity">
+              <input type="checkbox">
+              <span>Power Backup</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>PG Photos</label>
+
+          <label class="upload-box">
+            <span class="upload-icon">↑</span>
+            <strong>Upload photos</strong>
+            <small>JPG or PNG · Maximum 10 photos</small>
+            <input type="file" accept="image/*" multiple>
+          </label>
+        </div>
+
+        <button type="submit">
+  Continue to Plans
+</button>
+
+
+     
+
+
+        <p class="form-note">
+          By continuing, you agree to JaipurStays' Terms and Privacy Policy.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="how-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">HOW IT WORKS</span>
+      <h2>List your PG in 3 easy steps</h2>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-icon">📝</div>
+        <h3>Add your PG</h3>
+        <p>Enter your PG details, rent, location, amenities and photos.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-icon">💳</div>
+        <h3>Choose a plan</h3>
+        <p>Select the subscription plan that works best for your property.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-icon">🎓</div>
+        <h3>Get student inquiries</h3>
+        <p>Students discover your PG and contact you directly.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="owner-cta">
+
+  <div class="container cta-container">
+
+    <div>
+      <span class="eyebrow">GROW YOUR PG BUSINESS</span>
+      <h2>More visibility. More inquiries. More students.</h2>
+      <p>
+        JaipurStays helps local PG owners connect with students
+        searching for accommodation in Jaipur.
+      </p>
+    </div>
+
+    <a href="#" class="cta-button">Start Listing →</a>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+  <div class="container footer-content">
+
+    <div>
+      <a href="index.html" class="logo footer-logo">
+        <span class="logo-icon">J</span>
+        <span>Jaipur<span class="logo-highlight">Stays</span></span>
+      </a>
+
+      <p>
+        Jaipur's local PG and hostel marketplace for students and property owners.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Find PG</a>
+      <a href="#">Pricing</a>
+      <a href="#">Owner Login</a>
+      <a href="#">Contact</a>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© 2026 JaipurStays. All rights reserved.</span>
+    <span>Made with ❤️ in Jaipur</span>
+  </div>
+
+</footer>
+
+<script>
+const listingForm = document.querySelector(".listing-form");
+
+const urlParams = new URLSearchParams(window.location.search);
+const editMode = urlParams.get("edit");
+
+if (editMode === "true") {
+  const savedPG = localStorage.getItem("jaipurStaysPG");
+
+  if (savedPG) {
+    const pgData = JSON.parse(savedPG);
+
+    document.querySelector('input[placeholder="Enter your PG name"]').value = pgData.pgName || "";
+    document.querySelector('input[placeholder="Your name"]').value = pgData.ownerName || "";
+    document.querySelector('input[placeholder="10-digit number"]').value = pgData.phone || "";
+
+    document.querySelectorAll("select")[0].value = pgData.propertyType || "";
+    document.querySelectorAll("select")[1].value = pgData.gender || "";
+    document.querySelectorAll("select")[2].value = pgData.area || "";
+
+    document.querySelector('input[placeholder="₹ Monthly rent"]').value = pgData.rent || "";
+    document.querySelector('input[placeholder="₹ Deposit"]').value = pgData.deposit || "";
+    document.querySelector('input[placeholder="Number of available beds"]').value = pgData.beds || "";
+    document.querySelector('input[placeholder="WhatsApp number"]').value = pgData.whatsapp || "";
+    document.querySelector("textarea").value = pgData.description || "";
+
+    document.querySelectorAll(".amenity input").forEach(function(input) {
+      const name = input.parentElement.querySelector("span").textContent;
+      input.checked = pgData.amenities && pgData.amenities.includes(name);
+    });
+  }
+}
+
+listingForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const amenities = [];
+
+  document.querySelectorAll(".amenity input:checked").forEach(function(item) {
+    amenities.push(item.parentElement.querySelector("span").textContent);
+  });
+
+  const pgData = {
+    pgName: document.querySelector('input[placeholder="Enter your PG name"]').value,
+    ownerName: document.querySelector('input[placeholder="Your name"]').value,
+    phone: document.querySelector('input[placeholder="10-digit number"]').value,
+    propertyType: document.querySelectorAll("select")[0].value,
+    gender: document.querySelectorAll("select")[1].value,
+    area: document.querySelectorAll("select")[2].value,
+    rent: document.querySelector('input[placeholder="₹ Monthly rent"]').value,
+    deposit: document.querySelector('input[placeholder="₹ Deposit"]').value,
+    beds: document.querySelector('input[placeholder="Number of available beds"]').value,
+    whatsapp: document.querySelector('input[placeholder="WhatsApp number"]').value,
+    description: document.querySelector("textarea").value,
+    amenities: amenities
+  };
+
+  localStorage.setItem("jaipurStaysPG", JSON.stringify(pgData));
+
+  if (editMode === "true") {
+    window.location.href = "dashboard.html";
+  } else {
+    window.location.href = "pricing.html";
+  }
+});
+</script>
+
+
+
+</body>
+</html>
